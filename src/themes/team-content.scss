@@ -3,85 +3,82 @@
   background-image: url("../assets/images/teams.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
-}
 
-.teams-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 60px 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  .teams-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
 
-  .title {
-    font-weight: bold;
-    font-size: 50px;
-    color: #23384c;
-  }
-
-  .cards-container {
-    width: 80%;
-    margin-top: 40px;
-
-    .two-card {
-      display: flex;
-      justify-content: space-between;
-
-      .header {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      .card {
-        width: calc(50% - 10px);
-        background-color: #50555a;
-        opacity: 0.9;
-        text-align: justify;
-        padding: 30px;
-        color: #FFF;
-        font-size: 22px;
-        box-sizing: border-box;
-      }
+    .title {
+      font-weight: bold;
+      font-size: 50px;
+      color: #23384c;
     }
 
-    .one-big-card {
-      font-size: 22px;
-      color: #FFF;
-      padding: 30px;
-      margin-top: 20px;
-      background-color: #50555a;
-      opacity: 0.9;
+    .cards-container {
+      width: 80%;
+      margin-top: 40px;
 
-      .header {
-        text-align: center;
-        margin-bottom: 10px;
-        padding: 0 140px;
-        box-sizing: border-box;
-      }
-
-      .description {
+      .two-card {
         display: flex;
-        width: 100%;
-        margin: 20px 0 40px 0;
+        justify-content: space-between;
 
-        .program-list {
-          width: 50%;
-          padding-left: 40px;
+        .header {
+          text-align: center;
+          margin-bottom: 10px;
         }
 
-        .program-list, .links-list {
-          .item, .link-item {
-            margin-bottom: 10px;
+        .card {
+          width: calc(50% - 10px);
+          background-color: #50555a;
+          opacity: 0.9;
+          text-align: justify;
+          padding: 30px;
+          color: #FFF;
+          font-size: 22px;
+          box-sizing: border-box;
+        }
+      }
+
+      .one-big-card {
+        font-size: 22px;
+        color: #FFF;
+        padding: 30px;
+        margin-top: 20px;
+        background-color: #50555a;
+        opacity: 0.9;
+
+        .header {
+          text-align: center;
+          margin-bottom: 10px;
+          padding: 0 140px;
+          box-sizing: border-box;
+        }
+
+        .description {
+          display: flex;
+          width: 100%;
+          margin: 20px 0 40px 0;
+
+          .program-list {
+            width: 50%;
+            padding-left: 40px;
           }
 
-          .link-item {
-            color: #5bb3d9;
-            cursor: pointer;
+          .program-list, .links-list {
+            .item, .link-item {
+              margin-bottom: 10px;
+            }
+
+            .link-item {
+              color: #5bb3d9;
+              cursor: pointer;
+            }
           }
         }
       }
