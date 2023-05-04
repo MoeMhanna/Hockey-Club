@@ -1,0 +1,153 @@
+.our-mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 115px;
+  background-image: url("../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .our-mission {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 60px 0;
+    padding: 40px 40px 20px 100px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.65);
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    .description-container {
+      width: 75%;
+      box-sizing: border-box;
+
+      .title {
+        font-weight: 600;
+        font-size: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        color: #23384c;
+      }
+
+      .header {
+        text-align: center;
+        color: #23384c;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .our-mission-description {
+        color: #424242;
+        margin-top: 30px;
+        text-align: justify;
+        font-size: 20px;
+        position: relative;
+
+        div {
+          box-sizing: border-box;
+          margin-bottom: 30px;
+        }
+
+      }
+    }
+
+    .address-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+
+      .email, .phone-number, .address {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .footer {
+    font-size: 15px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .our-mission-container {
+    margin-top: 80px;
+    width: 100%;
+    background-color: red;
+    background-position: center center;
+
+    .our-mission {
+      flex-direction: column;
+      margin: 30px 0;
+      padding: 30px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.9);
+
+      .logo-container {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        img {
+          width: 200px;
+        }
+      }
+
+      .description-container {
+        width: 100%;
+
+        .title {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+
+        .header {
+          font-size: 25px;
+        }
+
+        .our-mission-description {
+          margin-top: 20px;
+          font-size: 18px;
+        }
+      }
+
+      .address-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 1.5;
+
+        .email, .phone-number, .address {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .footer {
+      margin-top: 30px;
+      padding: 0 30px;
+      font-size: 12px;
+    }
+  }
+}

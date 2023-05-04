@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "hocky-club:build:production"
+              "browserTarget": "hockey-club:build:production"
             },
             "development": {
-              "browserTarget": "hocky-club:build:development"
+              "browserTarget": "hockey-club:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hocky-club:build"
+            "browserTarget": "hockey-club:build"
           }
         },
         "test": {

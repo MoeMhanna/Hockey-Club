@@ -1,62 +1,190 @@
 <div class="page-container">
-<div class="site-under-construction">
-  Site under construction call Zach or Eric with questions
-</div>
-  <div class="page-content">
-    <div class="description-container">
-      <div class="title">
-        maine junior mariners hockey club
-      </div>
-      <div class="our-mission header">
-        Our Mission
-      </div>
-      <div class="our-mission-description">
-        <div>
-          The Maine Jr. Mariners mission is to build a competitive and winning 18U through Junior level Hockey teams,
-          while offering an exciting brand of hockey. We will strive to capture the support of the biddeford/York County
-          community and make them proud to call the Jr. Mariners their team.
+  <div class="top-nav-bar-container">
+    <div class="logo">
+      <img src="../assets/images/logos/top-nav-logo.png">
+    </div>
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="items-container">
+      <ng-container *ngFor="let menuItem of menuItems">
+        <div class="nav-item" [id]="menuItem.id">
+          {{menuItem.label}}
         </div>
-        <div>
-          Through optimized player development, our coaching staff will strive to produce college and professional
-          caliber
-          players and well-rounded individuals who will represent the community with respect and integrity
-          Our team is committed to making a positive impact in biddeford by presenting exciting, family entertainment,
-          and
-          helping our sponsors and partners grow their brands and businesses.
+      </ng-container>
+    </div>
+  </div>
+  <div class="our-mission-container">
+    <div class="our-mission">
+      <div class="description-container">
+        <div class="title">
+          maine junior mariners hockey club
         </div>
-        <div>
-          The Jr. Mariners are committed to making a difference in biddeford where we will live, play, and call home.
-          Our
-          players and coaches will be active members of the community and will be involved in numerous programs and
-          outreach events where we can serve and enrich the lives of others. Jr. Mariners players will be available for
-          big and small events and will bring fun-loving, enthusiastic energy with them wherever they go.
+        <div class="header">
+          Our Mission
+        </div>
+        <div class="our-mission-description">
+          <div>
+            The Maine Jr. Mariners mission is to build a competitive and winning 18U through Junior level Hockey teams,
+            while offering an exciting brand of hockey. We will strive to capture the support of the biddeford/York
+            County
+            community and make them proud to call the Jr. Mariners their team.
+          </div>
+          <div>
+            Through optimized player development, our coaching staff will strive to produce college and professional
+            caliber
+            players and well-rounded individuals who will represent the community with respect and integrity
+            Our team is committed to making a positive impact in biddeford by presenting exciting, family entertainment,
+            and
+            helping our sponsors and partners grow their brands and businesses.
+          </div>
+          <div>
+            The Jr. Mariners are committed to making a difference in biddeford where we will live, play, and call home.
+            Our
+            players and coaches will be active members of the community and will be involved in numerous programs and
+            outreach events where we can serve and enrich the lives of others. Jr. Mariners players will be available
+            for
+            big and small events and will bring fun-loving, enthusiastic energy with them wherever they go.
+          </div>
+        </div>
+        <div class="address-container">
+          <div class="email">WWW.MAINEJRMARINERS.COM</div>
+          <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+          <div class="address">BIDDEFORS MAINE 04005</div>
         </div>
       </div>
-
-      <div class="sponsors header">
-        Sponsors
-      </div>
-      <div class="sponsors-content">
-        edge hockey skills - biddeford youth hockey association - biddeford ice arena<br><br>
-
-        jason hight state farm insurance - pro stride skating - usa hockey
-      </div>
-
-      <div class="contact-us header">
-        Contact Us
-      </div>
-      <div class="contact-us-content">
-        <span>www.mainejrmariners.com</span>
-        <span>207-847-8123</span>
-        <span>biddeford maine usa</span>
-      </div>
-      <div class="contact-email">
-        <a href="mailto:info@mainejrmariners.com?subject=maine junior mariners hockey club">info@mainejrmariners.com</a>
-      </div>
-      <div class="footer">
-        the maine juniors are not affiliated with the maine mariners of the echl
+      <div class="logo-container">
+        <img src="../assets/images/logos/logo.png">
       </div>
     </div>
-    <img src="../assets/images/logo.png">
+    <div class="footer">
+      the maine juniors are not affiliated with the maine mariners of the echl
+    </div>
+  </div>
+  <div class="academic">
+    <div class="academic-container">
+      <div class="books-image-container">
+        <img src="../assets/images/books.png">
+        <div class="links-container">
+          <div class="link">https://www.sjcme.edu/</div>
+          <div class="link">https://vlacs.org/</div>
+        </div>
+      </div>
+      <div class="academic-description">
+        <div class="title">
+          Academics
+        </div>
+        <div class="content-description">
+          <div>
+            The high school years are a pivotal point in a student-athlete's life. The Maine Jr Mariners Academy is an
+            innovation way to incorporate the Pursuit of hockey development along with achieving academic success.
+            Weather in pursuit of future NCAA opportunities in the classroom, or on the ice, it is imperative that the
+            emphasis is applied to individual development during these formidable years.
+          </div>
+          <div>
+            Our Academy's model is to provide an environment that eliminates the time, logistics, and frustration
+            association with balancing hockey training, and educational advancement. Our goal is to encourage, to
+            support and partner with our students in order to develop their mental, physical, athletic and scholastic
+            development.
+          </div>
+          <div>
+            As a student athlete at Maine Jr. Mariner Academy, our students reside in St. Joseph's College dorm
+            facilities, attend
+            VLACS Virtual Learning Academy Charter Schools or take level 100 classes at St. Josephs Collage to keep you
+            NCAA eligible,
+            and train and practice up to five times a week. You also have the opportunity to continue with any
+            schooling you may be currently enrolled in. By providing all of these vital components within one program
+            plus having current NCAA Hockey coaches on staff eliminates the hurdles association with NCAA
+            eligibility, long drives times to practice, late study hours, homeschooling options, or living without
+            familiar
+            billets.
+          </div>
+          <div>
+            Through our unique leadership development, life skills are cerebral training, our students-athletes will
+            be prepared for Life's future challenges after graduation graduation and to succeed at the next level.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="address-container">
+      <div class="email">WWW.MAINEJRMARINERS.COM</div>
+      <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+      <div class="address">BIDDEFORS MAINE 04005</div>
+    </div>
+  </div>
+  <div class="teams">
+    <div class="teams-container">
+      <div class="title">
+        Teams
+      </div>
+      <div class="cards-container">
+        <div class="two-card">
+          <div class="card">
+            <div class="header">
+              18U AAA(National Bound)
+            </div>
+            <div class="content">
+              The Maine Jr. Mariners 18U AAA(National Bound) team will play in the NAPHL (approximately 28 regular
+              season games plus minimum of 4 playoff games), TIER 1 Hockey Federation (which will play 3-4 showcases for
+              a minimum of 12-16 games) and Beast Series (10-16p games). All three leagues are premier midget leagues in
+              North American and play the best competition. The 18U AAA(National Bound) team is owned and operated by
+              the Maine Jr. Mariners LLC.. We will be working in tandem with multiple NAHL and EHL teams to offer
+              players the chance for in-season promotions that very few teams can complete with.
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+              18U AA
+            </div>
+            <div class="content">
+              The Maine Jr. Mariners 18U AA team will play in the Beast Series (8-12 games) and E9 teams (8-12 games).
+              The 18U AA team will From September through November.
+            </div>
+          </div>
+        </div>
+        <div class="one-big-card">
+          <div class="header">
+            Our program is based upon individual skill development that better prepares our student athletes for future
+            success
+          </div>
+          <div class="description">
+            <div class="program-list">
+              <div class="item">
+                - Over 250 hours of on-ice development.
+              </div>
+              <div class="item">
+                - Current NCAA Hockey Coaches on staff.
+              </div>
+              <div class="item">
+                - Individual skill set development program.
+              </div>
+              <div class="item">
+                - National exposure opportunities.
+              </div>
+              <div class="item">
+                - NCAA accredited academics.
+              </div>
+              <div class="item">
+                - World class strength and conditioning facility.
+              </div>
+            </div>
+            <div class="links-list">
+              <div class="link-item">
+                http://naphl.com/
+              </div>
+              <div class="link-item">
+                http://www.tier1hockeyfederation.com/
+              </div>
+              <div class="link-item">
+                http://www.beast.hockey/
+              </div>
+              <div class="link-item">
+                http://www.elite9hockey.com/
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

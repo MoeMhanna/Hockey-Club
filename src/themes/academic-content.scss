@@ -1,0 +1,93 @@
+.academic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 0 100px 40px 40px;
+
+  .academic-container {
+    display: flex;
+    justify-content: space-between;
+
+    .books-image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .links-container {
+        .link {
+          font-size: 22px;
+          color: #4e7fc7;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .academic-description {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        margin-bottom: 40px;
+        font-size: 50px;
+        color: #263a4d;
+      }
+
+      .content-description {
+        div {
+          font-size: 20px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .address-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 75%;
+    margin-top: 50px;
+
+    .email, .phone-number, .address {
+      font-size: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .academic {
+    padding: 0 40px !important;
+    box-sizing: border-box;
+
+    .academic-container {
+      flex-direction: column;
+
+      .books-image-container {
+        margin-bottom: 40px;
+
+        img {
+          width: 200px;
+        }
+      }
+
+      .academic-description {
+        text-align: center !important;
+      }
+    }
+
+    .address-container {
+      flex-direction: column;
+      text-align: center;
+      min-width: unset;
+      margin-top: 20px;
+
+      .email, .phone-number, .address {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
