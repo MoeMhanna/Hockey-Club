@@ -1,0 +1,32 @@
+.staff-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  padding: 50px 30px;
+  box-sizing: border-box;
+
+  .title {
+    font-weight: bold;
+    font-size: 50px;
+    color: #23384c;
+    margin-bottom: 30px;
+  }
+
+  .staff {
+    background-color: #4e5358;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #FFF;
+
+    .name {
+      font-size: 25px;
+    }
+
+    div {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+  }
+}

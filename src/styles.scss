@@ -1,22 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  margin: 0;
-  background-image: url("assets/images/background.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: Roboto-Light, Roboto-Regular, Roboto, Helvetica, Arial, sans-serif !important;
-  position: relative;
+@import "themes/top-nav-bar";
+@import "themes/mission-content";
+@import "themes/academic-content";
+@import "themes/team-content";
+@import "themes/student-life";
+@import "themes/rink";
+@import "themes/staff";
+@import "themes/sponsors";
+@import "themes/contact-us";
+@import "themes/address";
+
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  color: #23384c;
+  margin-bottom: 30px;
 }
 
-body:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.65);
+a {
+  text-decoration: none;
+  color: #167ce1;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .site-link, .phone-number, .address {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .address-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    .site-link, .phone-number, .address {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Roboto-Light, Roboto-Regular, Roboto, Helvetica, Arial, sans-serif !important;
 }

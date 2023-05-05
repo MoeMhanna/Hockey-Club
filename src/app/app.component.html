@@ -1,19 +1,31 @@
-<div class="page-container">
-<div class="site-under-construction">
-  Site under construction call Zach or Eric with questions
+<div class="top-nav-bar-container">
+  <div class="logo">
+    <img src="../assets/images/logos/top-nav-logo.png">
+  </div>
+  <div class="items-container">
+    <ng-container *ngFor="let menuItem of menuItems">
+      <div class="nav-item"
+           (click)="scrollToElement(menuItem.id)">
+        {{menuItem.label}}
+      </div>
+    </ng-container>
+  </div>
 </div>
-  <div class="page-content">
+<div id="mission"
+     class="our-mission-container">
+  <div class="our-mission">
     <div class="description-container">
       <div class="title">
         maine junior mariners hockey club
       </div>
-      <div class="our-mission header">
+      <div class="header">
         Our Mission
       </div>
       <div class="our-mission-description">
         <div>
           The Maine Jr. Mariners mission is to build a competitive and winning 18U through Junior level Hockey teams,
-          while offering an exciting brand of hockey. We will strive to capture the support of the biddeford/York County
+          while offering an exciting brand of hockey. We will strive to capture the support of the biddeford/York
+          County
           community and make them proud to call the Jr. Mariners their team.
         </div>
         <div>
@@ -28,35 +40,483 @@
           The Jr. Mariners are committed to making a difference in biddeford where we will live, play, and call home.
           Our
           players and coaches will be active members of the community and will be involved in numerous programs and
-          outreach events where we can serve and enrich the lives of others. Jr. Mariners players will be available for
+          outreach events where we can serve and enrich the lives of others. Jr. Mariners players will be available
+          for
           big and small events and will bring fun-loving, enthusiastic energy with them wherever they go.
         </div>
       </div>
-
-      <div class="sponsors header">
-        Sponsors
-      </div>
-      <div class="sponsors-content">
-        edge hockey skills - biddeford youth hockey association - biddeford ice arena<br><br>
-
-        jason hight state farm insurance - pro stride skating - usa hockey
-      </div>
-
-      <div class="contact-us header">
-        Contact Us
-      </div>
-      <div class="contact-us-content">
-        <span>www.mainejrmariners.com</span>
-        <span>207-847-8123</span>
-        <span>biddeford maine usa</span>
-      </div>
-      <div class="contact-email">
-        <a href="mailto:info@mainejrmariners.com?subject=maine junior mariners hockey club">info@mainejrmariners.com</a>
-      </div>
-      <div class="footer">
-        the maine juniors are not affiliated with the maine mariners of the echl
+      <div class="address-container">
+        <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
+        <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+        <div class="address">BIDDEFORS MAINE 04005</div>
       </div>
     </div>
-    <img src="../assets/images/logo.png">
+    <div class="logo-container">
+      <img src="../assets/images/logos/logo.png">
+    </div>
+  </div>
+  <div class="footer">
+    the maine juniors are not affiliated with the maine mariners of the echl
+  </div>
+</div>
+<div id="academic"
+     class="academic">
+  <div class="academic-container">
+    <div class="books-image-container">
+      <img src="../assets/images/books.png">
+      <div class="links-container">
+        <div class="link">
+          <a href="https://www.sjcme.edu/">
+            https://www.sjcme.edu/
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://vlacs.org/">
+            https://vlacs.org/
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="academic-description">
+      <div class="title">
+        Academics
+      </div>
+      <div class="content-description">
+        <div>
+          The high school years are a pivotal point in a student-athlete's life. The Maine Jr Mariners Academy is an
+          innovation way to incorporate the Pursuit of hockey development along with achieving academic success.
+          Weather in pursuit of future NCAA opportunities in the classroom, or on the ice, it is imperative that the
+          emphasis is applied to individual development during these formidable years.
+        </div>
+        <div>
+          Our Academy's model is to provide an environment that eliminates the time, logistics, and frustration
+          association with balancing hockey training, and educational advancement. Our goal is to encourage, to
+          support and partner with our students in order to develop their mental, physical, athletic and scholastic
+          development.
+        </div>
+        <div>
+          As a student athlete at Maine Jr. Mariner Academy, our students reside in St. Joseph's College dorm
+          facilities, attend
+          VLACS Virtual Learning Academy Charter Schools or take level 100 classes at St. Josephs Collage to keep you
+          NCAA eligible,
+          and train and practice up to five times a week. You also have the opportunity to continue with any
+          schooling you may be currently enrolled in. By providing all of these vital components within one program
+          plus having current NCAA Hockey coaches on staff eliminates the hurdles association with NCAA
+          eligibility, long drives times to practice, late study hours, homeschooling options, or living without
+          familiar
+          billets.
+        </div>
+        <div>
+          Through our unique leadership development, life skills are cerebral training, our students-athletes will
+          be prepared for Life's future challenges after graduation graduation and to succeed at the next level.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="address-container">
+    <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
+    <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+    <div class="address">BIDDEFORS MAINE 04005</div>
+  </div>
+</div>
+<div id="teams"
+     class="teams">
+  <div class="teams-container">
+    <div class="title">
+      Teams
+    </div>
+    <div class="cards-container">
+      <div class="two-card">
+        <div class="card">
+          <div class="header">
+            18U AAA(National Bound)
+          </div>
+          <div class="content">
+            The Maine Jr. Mariners 18U AAA(National Bound) team will play in the NAPHL (approximately 28 regular
+            season games plus minimum of 4 playoff games), TIER 1 Hockey Federation (which will play 3-4 showcases for
+            a minimum of 12-16 games) and Beast Series (10-16p games). All three leagues are premier midget leagues in
+            North American and play the best competition. The 18U AAA(National Bound) team is owned and operated by
+            the Maine Jr. Mariners LLC.. We will be working in tandem with multiple NAHL and EHL teams to offer
+            players the chance for in-season promotions that very few teams can complete with.
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            18U AA
+          </div>
+          <div class="content">
+            The Maine Jr. Mariners 18U AA team will play in the Beast Series (8-12 games) and E9 teams (8-12 games).
+            The 18U AA team will From September through November.
+          </div>
+        </div>
+      </div>
+      <div class="one-big-card">
+        <div class="header">
+          Our program is based upon individual skill development that better prepares our student athletes for future
+          success
+        </div>
+        <div class="description">
+          <div class="program-list">
+            <div class="item">
+              - Over 250 hours of on-ice development.
+            </div>
+            <div class="item">
+              - Current NCAA Hockey Coaches on staff.
+            </div>
+            <div class="item">
+              - Individual skill set development program.
+            </div>
+            <div class="item">
+              - National exposure opportunities.
+            </div>
+            <div class="item">
+              - NCAA accredited academics.
+            </div>
+            <div class="item">
+              - World class strength and conditioning facility.
+            </div>
+          </div>
+          <div class="links-list">
+            <div class="link-item">
+              <a href="http://naphl.com/">
+                http://naphl.com/
+              </a>
+            </div>
+            <div class="link-item">
+              <a href="http://www.tier1hockeyfederation.com/">
+                http://www.tier1hockeyfederation.com/
+              </a>
+            </div>
+            <div class="link-item">
+              <a href="http://www.beast.hockey/">
+                http://www.beast.hockey/
+              </a>
+            </div>
+            <div class="link-item">
+              <a href="http://www.elite9hockey.com/">
+              http://www.elite9hockey.com/
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="student-life"
+     class="student-life">
+  <div class="title">Student Life</div>
+  <div class="subtitle">
+    Cultivating maturity through independence and responsibility.
+  </div>
+  <div class="contents">
+    <div class="descriptions">
+      <div class="text">
+        At the Maine Jr. Mariners Academy our students are poised for a positive transition into college as our dorm
+        life and facilities are located on St Joseph's College. This approach allows our students to be better
+        prepared by learning to be self-reliant, self-motivated and more responsible in their community.
+      </div>
+      <div class="text">
+        Maine Jr. Mariners Academy, our program is based upon individual skill development that better prepares our
+        student athletes for future success.
+        <div>- Over 300 hours of on-ice development.</div>
+        <div>- Individual skill set development program.</div>
+        <div>- National exposure opportunities.</div>
+        <div>- NCAA accredited academics.</div>
+        <div>- World class strength and conditioning facility.</div>
+      </div>
+      <div class="text">
+        Impact Fitness will be running all of Maine Jr. Mariners 18U AAA workout classes 2-3 times per week. This will
+        include weight lifting, conditioning, and injury prevention as well as a full membership to use the gym any
+        time.
+      </div>
+      <div class="link">
+        <a href="https://www.impactfc1.com">
+          https://www.impactfc1.com
+        </a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="../assets/images/students.png">
+    </div>
+  </div>
+  <div class="address-container">
+    <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
+    <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+    <div class="address">BIDDEFORS MAINE 04005</div>
+  </div>
+</div>
+<div id="rink"
+     class="rink">
+  <div class="rink-container">
+    <div class="title">Rink</div>
+    <div class="header">
+      The Bidderford Ice Arena is home to the Maine Jr. Mariners. The rink is also home to two local High School teams
+      Thorton Academy & Biddeford High School and lounge with a restaurant for your student athlete before and after
+      practice.
+    </div>
+    <div class="link">
+      <a href="https://www.impactfc1.com">
+        https://www.impactfc1.com
+      </a>
+    </div>
+    <div class="logos-container">
+      <div>
+        <div class="first-logo">
+          <img src="assets/images/logos/logo5.png">
+        </div>
+        <div class="second-logo">
+          <img src="assets/images/logos/logo4.png">
+        </div>
+        <div class="third-logo">
+          <img src="assets/images/logos/logo2.png">
+        </div>
+      </div>
+      <div>
+        <div class="fourth-logo">
+          <img src="assets/images/logos/logo1.png">
+        </div>
+        <div class="fifth-logo">
+          <img src="assets/images/logos/logo3.png">
+        </div>
+      </div>
+    </div>
+    <div class="address-container">
+      <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
+      <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+      <div class="address">BIDDEFORS MAINE 04005</div>
+    </div>
+  </div>
+</div>
+<div id="staff"
+     class="staff-container">
+  <div class="title">Staff</div>
+  <div class="staff">
+    <div class="name">
+      Zachary Lebowitz (Head Hockey Ops, Head Coach/GM)
+    </div>
+    <div>
+      Zach Lebowitz, a current NCAA assistant coach at Bowdoin college with 7 years of experience at the NCAA level, and
+      a former NCAA D3 goaltender and NEPSAC Champion has been coaching ice hockey and developing both skaters and
+      goaltenders for over 10 years. After a career ending knee injury, he left Western New England University to
+      achieve his BSBA in Finance from Suffolk University, and his MBA from Southern New Hampshire University. After
+      completing degrees, he had a short career in finance working in Hedge Funds for State Street Bank. Zach has had
+      several stops along the way in his hockey career including 6 years as an assistant at Tufts University, a brief
+      stint as Head Coach at the prep level, and a current position with the Groton School (NEPSAC), Bowdoin College
+      (NESCAC), Boston Jr Rangers (EHL(Assistant Coach) and EHLP (Head Coach). As a current Level 4 certified coach,
+      Zach looks to bring an amazing attitude and great work ethic to his new EHL and EHLP organization. Zach, an
+      Andover, MA native and current Amesbury, MA resident with his gorgeous wife and his 2 kids currently owns and
+      operates Edge Hockey Skills, where he runs weekly clinics for skaters and goalies at the Pro, NCAA, Junior.
+      Prep/High School, and youth hockey levels. Having coached at the high school, prep, Junior Tier II and Tier III
+      Levels as well as the NCAA level he brings loads of experience to build a new expansion program into a successful
+      business. Using his network, he believes he can help promote many of his players to higher junior levels and the
+      collegiate levels. Zach has extensive experience alongside several great coaches like current director of
+      goaltending for the NY Islanders Mitch Korn, Current NCAA D3 Head Coach Pat Norton and Matt Keating, current NCAA
+      D3 Head Coach, former NCAA D1 Interim Head Coach and former ECHL Head Coach Ben Guite, former Boston Bruins
+      Skating Coach and current NCAA D1 Assistant Coach Kim Brandvold. Learning from accomplished coaches and continuing
+      to be a student of the game has provided Zach with a drive for coaching student-athletes both on and off the ice
+      to become exceptional in hockey and life.
+    </div>
+  </div>
+  <div class="staff">
+    <div class="name">
+      Eric Jaslow (Manager)
+    </div>
+    <div>
+      Eric Jaslow has served as the owner of State Farm Insurance Nyack, New York since 2005. He has guided the Nyack NY
+      office from a small insurance agency into a premier insurance agency and is responsible for the company's overall
+      strategy. As an independent agency owner, Eric currently focuses his time in the areas of sales innovation, long
+      term planning, financial performance, employee development and passionately overseeing the agencies unique
+      customer engagement model. Eric has been involved in supporting a wide range of functions for both personal and
+      commercial customers. He has experience in developing systems for sales, marketing, and customer service. Eric has
+      held positions in different industries such as Executive Chef in the Hotel/Restaurant Industry, Co-owner of
+      Tentwares Inc. in the Party Rental Industry as well as currently an Independent Agent for State Farmin the
+      Insurance and Financial Service Industry.
+    </div>
+    <div>
+      Eric was born in Queens, New York and has a beautiful wife of 19 years along with two boys 18 &13 residing in
+      Tomkins Cove New York. He has an Associates Degree in Culinary Arts from the Culinary Institute of America in Hyde
+      Park, New-York.
+    </div>
+    <div>
+      Eric is a current member of the Town of Stony Point Planning Board, Black RockFish and Game Club and The Stony
+      Point Lions Club.
+    </div>
+  </div>
+  <div class="staff">
+    <div class="name">
+      Liane Scattolin (CFO)
+    </div>
+    <div>
+      Liane Scattolin has an extensive knowledge in both the banking and hockey industry. Liane worked at the CIBC from
+      1978-1998 where she has held many positions. She began as a bank teller and worked her way up to a branch
+      supervisor and finance advisor while obtaining a degree from the Toronto School of Business. Her extensive hockey
+      background comes from both as a hockey mom and her present career. Liane left the banking industry in 1998 to
+      pursue a career in the hockey industry where she aided to grow a business to one of the largest world-renowned
+      hockey schools. She prides herself in excellent customer service and aiding in the development of helping hockey
+      players grow from youth hockey players, juniors, college and pros. Liane is presently holding the COO position
+      where she is managing the business operations of the school, she acts as a liaison between coaches, students and
+      the CEO of the hockey school. Liane is in charge of the business operations of the school where she coordinates
+      ice time, housing for students, scheduling for both coaches and students, finances, and all the logistics of
+      ensuring that all camps are operated seamlessly for both students and parents.
+    </div>
+    <div>
+      Liane was born and raised in Toronto Canada where she raised two children Devyn and Deanna-Marie. Devyn is a
+      successful Financial Advisor for the CIBC and Deanna-Marie is a successful Real Estate Agent for Royal LePage.
+    </div>
+  </div>
+</div>
+<div id="sponsors"
+     class="sponsors-container">
+  <div class="title">Affiliates / Sponsors</div>
+  <div class="sponsors-details-container">
+    <div class="sponsors-list">
+      <div class="sponsor">
+        <div class="name">
+          Bidderford Youth Hockey
+        </div>
+        <div class="link">
+          <a href="https://www.bidderfordyouthhockey.org/">
+            https://www.bidderfordyouthhockey.org/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Edge Hockey Skills
+        </div>
+        <div class="link">
+          <a href="https://www.edgehokceyskills.com/">
+            https://www.edgehokceyskills.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Bidderford Arena
+        </div>
+        <div class="link">
+          <a href="https://www.biddefordarena.com/">
+            https://www.biddefordarena.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Pro Stride Skating
+        </div>
+        <div class="link">
+          <a href="https://www.prostrideskating.com/">
+            https://www.prostrideskating.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          St. Joseph College
+        </div>
+        <div class="link">
+          <a href="https://www.sjcme.edu/">
+            https://www.sjcme.edu/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Virtual Learning Academy
+        </div>
+        <div class="link">
+          <a href="https://wwwvlacs.org/">
+            https://wwwvlacs.org/
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sponsors-list">
+      <div class="sponsor">
+        <div class="name">
+          North American Prospects Hockey League
+        </div>
+        <div class="link">
+          <a href="http://naphl.com/">
+            http://naphl.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Tier 1 Hockey Federation
+        </div>
+        <div class="link">
+          <a href="https://www.tier1hockeyfederation.com/">
+            https://www.tier1hockeyfederation.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Beast Hockey League
+        </div>
+        <div class="link">
+          <a href="https://www.beast.hockey/">
+            https://www.beast.hockey/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Elite 9 Hockey League
+        </div>
+        <div class="link">
+          <a href="https://www.elite9hockey.com/">
+            https://www.elite9hockey.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Impact Fitness
+        </div>
+        <div class="link">
+          <a href="https://www.impactfc1.com/">
+            https://www.impactfc1.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Jason Hight State Farm Insurance
+        </div>
+        <div class="link">
+          <a href="https://www.biddefordmaineinsurance.com/">
+            https://www.biddefordmaineinsurance.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          USA Hockey
+        </div>
+        <div class="link">
+          <a href="https://www.usahockey.com/">
+            https://www.usahockey.com/
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact-us"
+     class="contact-us">
+  <div class="title">Contact Us</div>
+  <div class="address-container">
+    <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
+    <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+    <div class="address">BIDDEFORS MAINE 04005</div>
+  </div>
+  <div class="email-address">
+    <a href="mailto:info@mainjrmariners.com">
+      info@mainjrmariners.com
+    </a>
   </div>
 </div>
