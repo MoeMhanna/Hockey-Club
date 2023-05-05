@@ -4,8 +4,34 @@
 @import "themes/academic-content";
 @import "themes/team-content";
 @import "themes/student-life";
+@import "themes/rink";
+@import "themes/staff";
+@import "themes/sponsors";
+@import "themes/contact-us";
+@import "themes/address";
+
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  color: #23384c;
+  margin-bottom: 30px;
+}
+
+
+.address-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+
+  .email, .phone-number, .address {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}
 
 body {
   margin: 0;
+  width: 100%;
   font-family: Roboto-Light, Roboto-Regular, Roboto, Helvetica, Arial, sans-serif !important;
 }

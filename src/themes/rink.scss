@@ -1,0 +1,159 @@
+.rink {
+  position: relative;
+  background-image: url("../assets/images/hockey-playground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .rink-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    .title {
+      font-weight: bold;
+      font-size: 50px;
+      color: #23384c;
+    }
+
+    .header {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 40px;
+      text-align: center;
+      padding: 0 60px;
+      box-sizing: border-box;
+    }
+
+    .link {
+      color: #1fb1ea;
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+
+    .logos-container {
+      width: 100%;
+      box-sizing: border-box;
+
+      div {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .first-logo {
+          img {
+            width: 600px;
+          }
+        }
+
+        .second-logo {
+          img {
+            width: 450px;
+          }
+        }
+
+        .third-logo {
+          img {
+            width: 500px;
+          }
+        }
+
+        .fourth-logo {
+          img {
+            width: 500px;
+          }
+        }
+
+        .fifth-logo {
+          img {
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) and (min-width: 1330px) {
+  .logos-container {
+
+    div {
+      .first-logo {
+        img {
+          width: 500px !important;
+        }
+      }
+
+      .second-logo {
+        img {
+          width: 350px !important;
+        }
+      }
+
+      .third-logo {
+        img {
+          width: 400px !important;
+        }
+      }
+
+      .fourth-logo {
+        img {
+          width: 400px !important;
+        }
+      }
+
+      .fifth-logo {
+        img {
+          width: 400px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1330px) and (min-width: 1000px) {
+  .logos-container {
+
+    div {flex-wrap: wrap;
+      .first-logo {
+        width: 50% !important;
+
+        img {
+          width: 500px !important;
+        }
+      }
+
+      .second-logo {
+        width: 50% !important;
+
+        img {
+          width: 350px !important;
+        }
+      }
+
+      .third-logo {
+        img {
+          width: 400px !important;
+        }
+      }
+
+      .fourth-logo {
+        img {
+          width: 400px !important;
+        }
+      }
+
+      .fifth-logo {
+        img {
+          width: 400px !important;
+        }
+      }
+    }
+  }
+}
+
