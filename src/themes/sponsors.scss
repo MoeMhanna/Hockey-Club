@@ -23,11 +23,6 @@
       width: 40%;
       margin-bottom: 40px;
 
-      @media (max-width: 768px) {
-        width: 100%;
-        margin-bottom: 0 !important;
-      }
-
       .sponsor {
         margin-bottom: 30px;
         font-size: 25px;
@@ -41,6 +36,22 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-container {
+    padding: 20px !important;
+  }
+  .sponsors-list {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    .name {
+      font-size: 22px !important;
+    }
+    .link {
+      font-size: 18px !important;
     }
   }
 }

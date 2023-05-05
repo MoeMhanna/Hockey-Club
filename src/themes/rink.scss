@@ -81,7 +81,6 @@
 
 @media screen and (max-width: 1550px) and (min-width: 1330px) {
   .logos-container {
-
     div {
       .first-logo {
         img {
@@ -117,9 +116,14 @@
 }
 
 @media screen and (max-width: 1330px) and (min-width: 1000px) {
+  .header {
+    padding: 0 20px !important;
+  }
   .logos-container {
 
-    div {flex-wrap: wrap;
+    div {
+      flex-wrap: wrap;
+
       .first-logo {
         width: 50% !important;
 
@@ -157,3 +161,60 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 0 20px !important;
+  }
+  .logos-container {
+    div {
+      flex-wrap: wrap;
+
+      .first-logo {
+        width: 100% !important;
+
+        img {
+          margin-bottom: 20px;
+          width: 400px !important;
+        }
+      }
+
+      .second-logo {
+        width: 100% !important;
+
+        img {
+          width: 250px !important;
+        }
+      }
+
+      .third-logo {
+        width: 100% !important;
+
+        img {
+          width: 300px !important;
+        }
+      }
+
+      .fourth-logo {
+        width: 100% !important;
+
+        img {
+          width: 300px !important;
+        }
+      }
+
+      .fifth-logo {
+        width: 100% !important;
+
+        img {
+          width: 300px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 28px !important;
+  }
+}

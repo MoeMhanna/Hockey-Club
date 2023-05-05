@@ -17,21 +17,39 @@
   margin-bottom: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: #167ce1;
+}
 
 .address-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
 
-  .email, .phone-number, .address {
+  .site-link, .phone-number, .address {
     font-size: 20px;
     margin-right: 20px;
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .address-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    .site-link, .phone-number, .address {
+      margin-bottom: 5px;
+    }
+  }
+}
+
 body {
   margin: 0;
-  width: 100%;
+  overflow-x: hidden;
   font-family: Roboto-Light, Roboto-Regular, Roboto, Helvetica, Arial, sans-serif !important;
 }

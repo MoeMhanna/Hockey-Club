@@ -2,18 +2,17 @@
   <div class="logo">
     <img src="../assets/images/logos/top-nav-logo.png">
   </div>
-  <div class="menu-icon">
-    <i class="fa fa-bars"></i>
-  </div>
   <div class="items-container">
     <ng-container *ngFor="let menuItem of menuItems">
-      <div class="nav-item" [id]="menuItem.id">
+      <div class="nav-item"
+           (click)="scrollToElement(menuItem.id)">
         {{menuItem.label}}
       </div>
     </ng-container>
   </div>
 </div>
-<div class="our-mission-container">
+<div id="mission"
+     class="our-mission-container">
   <div class="our-mission">
     <div class="description-container">
       <div class="title">
@@ -47,7 +46,7 @@
         </div>
       </div>
       <div class="address-container">
-        <div class="email">WWW.MAINEJRMARINERS.COM</div>
+        <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
         <div class="phone-number">207-847-8123, P.O. Box 1773</div>
         <div class="address">BIDDEFORS MAINE 04005</div>
       </div>
@@ -60,13 +59,22 @@
     the maine juniors are not affiliated with the maine mariners of the echl
   </div>
 </div>
-<div class="academic">
+<div id="academic"
+     class="academic">
   <div class="academic-container">
     <div class="books-image-container">
       <img src="../assets/images/books.png">
       <div class="links-container">
-        <div class="link">https://www.sjcme.edu/</div>
-        <div class="link">https://vlacs.org/</div>
+        <div class="link">
+          <a href="https://www.sjcme.edu/">
+            https://www.sjcme.edu/
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://vlacs.org/">
+            https://vlacs.org/
+          </a>
+        </div>
       </div>
     </div>
     <div class="academic-description">
@@ -106,12 +114,13 @@
     </div>
   </div>
   <div class="address-container">
-    <div class="email">WWW.MAINEJRMARINERS.COM</div>
+    <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
     <div class="phone-number">207-847-8123, P.O. Box 1773</div>
     <div class="address">BIDDEFORS MAINE 04005</div>
   </div>
 </div>
-<div class="teams">
+<div id="teams"
+     class="teams">
   <div class="teams-container">
     <div class="title">
       Teams
@@ -169,16 +178,24 @@
           </div>
           <div class="links-list">
             <div class="link-item">
-              http://naphl.com/
+              <a href="http://naphl.com/">
+                http://naphl.com/
+              </a>
             </div>
             <div class="link-item">
-              http://www.tier1hockeyfederation.com/
+              <a href="http://www.tier1hockeyfederation.com/">
+                http://www.tier1hockeyfederation.com/
+              </a>
             </div>
             <div class="link-item">
-              http://www.beast.hockey/
+              <a href="http://www.beast.hockey/">
+                http://www.beast.hockey/
+              </a>
             </div>
             <div class="link-item">
+              <a href="http://www.elite9hockey.com/">
               http://www.elite9hockey.com/
+              </a>
             </div>
           </div>
         </div>
@@ -186,7 +203,8 @@
     </div>
   </div>
 </div>
-<div class="student-life">
+<div id="student-life"
+     class="student-life">
   <div class="title">Student Life</div>
   <div class="subtitle">
     Cultivating maturity through independence and responsibility.
@@ -212,14 +230,293 @@
         include weight lifting, conditioning, and injury prevention as well as a full membership to use the gym any
         time.
       </div>
+      <div class="link">
+        <a href="https://www.impactfc1.com">
+          https://www.impactfc1.com
+        </a>
+      </div>
     </div>
     <div class="image-container">
       <img src="../assets/images/students.png">
     </div>
   </div>
   <div class="address-container">
-    <div class="email">WWW.MAINEJRMARINERS.COM</div>
+    <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
     <div class="phone-number">207-847-8123, P.O. Box 1773</div>
     <div class="address">BIDDEFORS MAINE 04005</div>
+  </div>
+</div>
+<div id="rink"
+     class="rink">
+  <div class="rink-container">
+    <div class="title">Rink</div>
+    <div class="header">
+      The Bidderford Ice Arena is home to the Maine Jr. Mariners. The rink is also home to two local High School teams
+      Thorton Academy & Biddeford High School and lounge with a restaurant for your student athlete before and after
+      practice.
+    </div>
+    <div class="link">
+      <a href="https://www.impactfc1.com">
+        https://www.impactfc1.com
+      </a>
+    </div>
+    <div class="logos-container">
+      <div>
+        <div class="first-logo">
+          <img src="assets/images/logos/logo5.png">
+        </div>
+        <div class="second-logo">
+          <img src="assets/images/logos/logo4.png">
+        </div>
+        <div class="third-logo">
+          <img src="assets/images/logos/logo2.png">
+        </div>
+      </div>
+      <div>
+        <div class="fourth-logo">
+          <img src="assets/images/logos/logo1.png">
+        </div>
+        <div class="fifth-logo">
+          <img src="assets/images/logos/logo3.png">
+        </div>
+      </div>
+    </div>
+    <div class="address-container">
+      <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
+      <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+      <div class="address">BIDDEFORS MAINE 04005</div>
+    </div>
+  </div>
+</div>
+<div id="staff"
+     class="staff-container">
+  <div class="title">Staff</div>
+  <div class="staff">
+    <div class="name">
+      Zachary Lebowitz (Head Hockey Ops, Head Coach/GM)
+    </div>
+    <div>
+      Zach Lebowitz, a current NCAA assistant coach at Bowdoin college with 7 years of experience at the NCAA level, and
+      a former NCAA D3 goaltender and NEPSAC Champion has been coaching ice hockey and developing both skaters and
+      goaltenders for over 10 years. After a career ending knee injury, he left Western New England University to
+      achieve his BSBA in Finance from Suffolk University, and his MBA from Southern New Hampshire University. After
+      completing degrees, he had a short career in finance working in Hedge Funds for State Street Bank. Zach has had
+      several stops along the way in his hockey career including 6 years as an assistant at Tufts University, a brief
+      stint as Head Coach at the prep level, and a current position with the Groton School (NEPSAC), Bowdoin College
+      (NESCAC), Boston Jr Rangers (EHL(Assistant Coach) and EHLP (Head Coach). As a current Level 4 certified coach,
+      Zach looks to bring an amazing attitude and great work ethic to his new EHL and EHLP organization. Zach, an
+      Andover, MA native and current Amesbury, MA resident with his gorgeous wife and his 2 kids currently owns and
+      operates Edge Hockey Skills, where he runs weekly clinics for skaters and goalies at the Pro, NCAA, Junior.
+      Prep/High School, and youth hockey levels. Having coached at the high school, prep, Junior Tier II and Tier III
+      Levels as well as the NCAA level he brings loads of experience to build a new expansion program into a successful
+      business. Using his network, he believes he can help promote many of his players to higher junior levels and the
+      collegiate levels. Zach has extensive experience alongside several great coaches like current director of
+      goaltending for the NY Islanders Mitch Korn, Current NCAA D3 Head Coach Pat Norton and Matt Keating, current NCAA
+      D3 Head Coach, former NCAA D1 Interim Head Coach and former ECHL Head Coach Ben Guite, former Boston Bruins
+      Skating Coach and current NCAA D1 Assistant Coach Kim Brandvold. Learning from accomplished coaches and continuing
+      to be a student of the game has provided Zach with a drive for coaching student-athletes both on and off the ice
+      to become exceptional in hockey and life.
+    </div>
+  </div>
+  <div class="staff">
+    <div class="name">
+      Eric Jaslow (Manager)
+    </div>
+    <div>
+      Eric Jaslow has served as the owner of State Farm Insurance Nyack, New York since 2005. He has guided the Nyack NY
+      office from a small insurance agency into a premier insurance agency and is responsible for the company's overall
+      strategy. As an independent agency owner, Eric currently focuses his time in the areas of sales innovation, long
+      term planning, financial performance, employee development and passionately overseeing the agencies unique
+      customer engagement model. Eric has been involved in supporting a wide range of functions for both personal and
+      commercial customers. He has experience in developing systems for sales, marketing, and customer service. Eric has
+      held positions in different industries such as Executive Chef in the Hotel/Restaurant Industry, Co-owner of
+      Tentwares Inc. in the Party Rental Industry as well as currently an Independent Agent for State Farmin the
+      Insurance and Financial Service Industry.
+    </div>
+    <div>
+      Eric was born in Queens, New York and has a beautiful wife of 19 years along with two boys 18 &13 residing in
+      Tomkins Cove New York. He has an Associates Degree in Culinary Arts from the Culinary Institute of America in Hyde
+      Park, New-York.
+    </div>
+    <div>
+      Eric is a current member of the Town of Stony Point Planning Board, Black RockFish and Game Club and The Stony
+      Point Lions Club.
+    </div>
+  </div>
+  <div class="staff">
+    <div class="name">
+      Liane Scattolin (CFO)
+    </div>
+    <div>
+      Liane Scattolin has an extensive knowledge in both the banking and hockey industry. Liane worked at the CIBC from
+      1978-1998 where she has held many positions. She began as a bank teller and worked her way up to a branch
+      supervisor and finance advisor while obtaining a degree from the Toronto School of Business. Her extensive hockey
+      background comes from both as a hockey mom and her present career. Liane left the banking industry in 1998 to
+      pursue a career in the hockey industry where she aided to grow a business to one of the largest world-renowned
+      hockey schools. She prides herself in excellent customer service and aiding in the development of helping hockey
+      players grow from youth hockey players, juniors, college and pros. Liane is presently holding the COO position
+      where she is managing the business operations of the school, she acts as a liaison between coaches, students and
+      the CEO of the hockey school. Liane is in charge of the business operations of the school where she coordinates
+      ice time, housing for students, scheduling for both coaches and students, finances, and all the logistics of
+      ensuring that all camps are operated seamlessly for both students and parents.
+    </div>
+    <div>
+      Liane was born and raised in Toronto Canada where she raised two children Devyn and Deanna-Marie. Devyn is a
+      successful Financial Advisor for the CIBC and Deanna-Marie is a successful Real Estate Agent for Royal LePage.
+    </div>
+  </div>
+</div>
+<div id="sponsors"
+     class="sponsors-container">
+  <div class="title">Affiliates / Sponsors</div>
+  <div class="sponsors-details-container">
+    <div class="sponsors-list">
+      <div class="sponsor">
+        <div class="name">
+          Bidderford Youth Hockey
+        </div>
+        <div class="link">
+          <a href="https://www.bidderfordyouthhockey.org/">
+            https://www.bidderfordyouthhockey.org/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Edge Hockey Skills
+        </div>
+        <div class="link">
+          <a href="https://www.edgehokceyskills.com/">
+            https://www.edgehokceyskills.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Bidderford Arena
+        </div>
+        <div class="link">
+          <a href="https://www.biddefordarena.com/">
+            https://www.biddefordarena.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Pro Stride Skating
+        </div>
+        <div class="link">
+          <a href="https://www.prostrideskating.com/">
+            https://www.prostrideskating.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          St. Joseph College
+        </div>
+        <div class="link">
+          <a href="https://www.sjcme.edu/">
+            https://www.sjcme.edu/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Virtual Learning Academy
+        </div>
+        <div class="link">
+          <a href="https://wwwvlacs.org/">
+            https://wwwvlacs.org/
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sponsors-list">
+      <div class="sponsor">
+        <div class="name">
+          North American Prospects Hockey League
+        </div>
+        <div class="link">
+          <a href="http://naphl.com/">
+            http://naphl.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Tier 1 Hockey Federation
+        </div>
+        <div class="link">
+          <a href="https://www.tier1hockeyfederation.com/">
+            https://www.tier1hockeyfederation.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Beast Hockey League
+        </div>
+        <div class="link">
+          <a href="https://www.beast.hockey/">
+            https://www.beast.hockey/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Elite 9 Hockey League
+        </div>
+        <div class="link">
+          <a href="https://www.elite9hockey.com/">
+            https://www.elite9hockey.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Impact Fitness
+        </div>
+        <div class="link">
+          <a href="https://www.impactfc1.com/">
+            https://www.impactfc1.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          Jason Hight State Farm Insurance
+        </div>
+        <div class="link">
+          <a href="https://www.biddefordmaineinsurance.com/">
+            https://www.biddefordmaineinsurance.com/
+          </a>
+        </div>
+      </div>
+      <div class="sponsor">
+        <div class="name">
+          USA Hockey
+        </div>
+        <div class="link">
+          <a href="https://www.usahockey.com/">
+            https://www.usahockey.com/
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact-us"
+     class="contact-us">
+  <div class="title">Contact Us</div>
+  <div class="address-container">
+    <div class="site-link">WWW.MAINEJRMARINERS.COM</div>
+    <div class="phone-number">207-847-8123, P.O. Box 1773</div>
+    <div class="address">BIDDEFORS MAINE 04005</div>
+  </div>
+  <div class="email-address">
+    <a href="mailto:info@mainjrmariners.com">
+      info@mainjrmariners.com
+    </a>
   </div>
 </div>
